@@ -220,12 +220,6 @@
     {%- if not is_index %}
       {{- next_inject('postBodyEnd') }}
 
-    <div>
-          {% if not is_index %}
-            {% include 'my-copyright.swig' %}
-          {% endif %}
-    </div>
-    
       {%- if post.reward_settings.enable %}
         {{ partial('_partials/post/post-reward.swig') }}
       {%- endif %}

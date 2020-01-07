@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 弘扬国粹
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+description: '修真'
+keywords: 内功
+author: BSDxxxx
+language: zh-CN
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://xzyx.eu.org
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -111,3 +111,10 @@ backup:
   repository:
     github: git@github.com:BSDxxxx/BSDxxxx.github.io.git,backup
     coding: git@github.com:BSDxxxx/BSDxxxx.github.io.git,backup
+
+# Local Search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

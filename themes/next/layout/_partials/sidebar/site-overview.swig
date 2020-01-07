@@ -5,6 +5,10 @@
   {%- endif %}
   <p class="site-author-name" itemprop="name">{{ author }}</p>
   <div class="site-description" itemprop="description">{{ description }}</div>
+  <div id="music163player">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=2751189994&auto=1&height=90">
+    </iframe>
+  </div>
 </div>
 
 {%- if theme.site_state %}
