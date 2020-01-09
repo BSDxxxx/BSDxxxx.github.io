@@ -55,5 +55,12 @@
   {%- if theme.pjax %}
     </div>
   {%- endif %}
+  <!--鼠标点击效果-->
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/click-effects.js"></script>
+  <!--浏览器搞笑标题-->
+  <script type="text/javascript" src="/js/funny-title.js"></script>
 </body>
 </html>
