@@ -1163,7 +1163,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #81244a;
+  background: #8bffd6;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2625,4 +2625,7 @@ hr {
 }
 .sub-menu .menu-item {
   display: inline-block;
+}
+body {
+  cursor: url("https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@1.0/images/mouse.cur "), auto;
 }
