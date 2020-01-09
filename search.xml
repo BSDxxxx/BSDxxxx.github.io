@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客后台管理地址</title>
+    <url>/2020/01/09/%E5%8D%9A%E5%AE%A2%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E5%9C%B0%E5%9D%80/</url>
+    <content><![CDATA[<ul>
+<li><h1 id="tidio实时聊天系统"><a href="#tidio实时聊天系统" class="headerlink" title="tidio实时聊天系统"></a><a href="https://www.tidio.com/panel/" target="_blank" rel="noopener">tidio实时聊天系统</a></h1></li>
+</ul>
+<p><a href="https://www.tidio.com/panel/" target="_blank" rel="noopener"><img src="https://www.tidio.com/wp-content/themes/tidio-wptheme-1.16-1/assets/favicons/favicon.ico" alt="tidio"></a> </p>
+<ul>
+<li><h1 id="leancloud（valine留言系统）"><a href="#leancloud（valine留言系统）" class="headerlink" title="leancloud（valine留言系统）"></a><a href="https://leancloud.cn/dashboard/" target="_blank" rel="noopener">leancloud（valine留言系统）</a></h1></li>
+</ul>
+<p><a href="https://leancloud.cn/dashboard/" target="_blank" rel="noopener"><img src="https://www.leancloud.cn/favicon.ico" alt="leancloud"></a></p>
+]]></content>
+      <categories>
+        <category>博客管理</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/01/07/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
