@@ -62,5 +62,8 @@
   <script type="text/javascript" src="/js/click-effects.js"></script>
   <!--浏览器搞笑标题-->
   <script type="text/javascript" src="/js/funny-title.js"></script>
+  <!-- 代码块复制功能 -->
+  <script type="text/javascript" src="/js/clipboard.min.js"></script>
+  <script type="text/javascript" src="/js/clipboard-use.js"></script>
 </body>
 </html>

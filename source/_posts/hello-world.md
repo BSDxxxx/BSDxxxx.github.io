@@ -7,7 +7,8 @@ categories:
 message: '您好, 这里需要密码.'
 comment: true
 copyright: true
-sticky:
+sitemap: false
+top:
 photos:
 password:
 hide: true
@@ -47,3 +48,13 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+### Convenient Command
+
+``` cmd
+> hexo g && hexo s --drafts
+
+> hexo clean && hexo g && hexo s --drafts
+
+> hexo clean && hexo g && hexo b && hexo d
+```

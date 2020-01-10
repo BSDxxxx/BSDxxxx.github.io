@@ -9,7 +9,7 @@ comment: true
 copyright: true
 sitemap: true
 date: {{ date }}
-sticky: 
+top: 
 photos: 
 password: 
 hide: 
