@@ -7,6 +7,7 @@ categories:
 message: 您好, 这里需要密码.
 comment: true
 copyright: true
+sitemap: true
 date: {{ date }}
 sticky: 
 photos: 
