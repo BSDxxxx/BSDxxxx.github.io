@@ -24,7 +24,9 @@ NexT.utils = {
         $imageWrapLink.attr('data-fancybox', 'default').attr('rel', 'default');
       }
 
-      var imageTitle = $image.attr('title') || $image.attr('alt');
+      // 显示图片标题
+      // var imageTitle = $image.attr('title') || $image.attr('alt');
+      var imageTitle = '';
       if (imageTitle) {
         $imageWrapLink.append(`<p class="image-caption">${imageTitle}</p>`);
         // Make sure img title tag will show correctly in fancybox
@@ -34,12 +36,17 @@ NexT.utils = {
 
     $.fancybox.defaults.hash = false;
     $('.fancybox').fancybox({
-      loop   : true,
-      helpers: {
-        overlay: {
-          locked: false
-        }
-      }
+			buttons : [ 
+			  'slideShow',
+			  'share',
+			  'zoom',
+			  'fullScreen',
+        'thumbs',
+			  'close'
+			],
+			thumbs : {
+			  autoStart : true
+			}
     });
   },
 

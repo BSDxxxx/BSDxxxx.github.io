@@ -18,13 +18,10 @@ hide:
 
 ---
 
-Joplin电脑版支持自定义CSS，在
+Joplin电脑版支持自定义CSS，在```C:\Users\zyx\.config\joplin-desktop\```路径下添加```userstyle.css```文件，往里写入样式即可。
 
-~~~
-C:\Users\zyx\.config\joplin-desktop\
-~~~
+<!--more-->
 
-路径下添加userstyle.css文件，往里写入样式即可。
 
 # 代码示例
 
@@ -40,7 +37,10 @@ C:\Users\zyx\.config\joplin-desktop\
 
 ![JoplinCss](../images/JoplinCss.png)
 
-~~~ CSS
+<details>
+<summary>展开查看</summary>
+
+``` css
 @charset "UTF-8";
 
 @import url('https://fonts.geekzu.org/css?family=Monda:300,300i,400,400i,600,600i,700,700i');
@@ -540,4 +540,6 @@ ul li::before {
 mark {
     background-color: orange;
 }
-~~~
+```
+
+</details>

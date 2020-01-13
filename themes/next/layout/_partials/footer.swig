@@ -15,7 +15,7 @@
   &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }} – {% endif %}
   <span itemprop="copyrightYear">{{ copyright_year }}</span>
   <span class="with-love">
-    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-{{ theme.footer.icon.name }}"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright or author }}</span>
 
@@ -43,7 +43,7 @@
 </div>
 
 {%- if theme.footer.powered.enable %}
-<!--
+
   <div class="powered-by">
     {{- __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'})) }}
     {%- if theme.footer.powered.version %} v{{ hexo_version }}{%- endif %}
@@ -64,7 +64,7 @@
     {%- if theme.footer.theme.version %} v{{ next_version }}{%- endif %}
   </div>
 {%- endif %}
--->
+
 
 {%- if theme.add_this_id %}
   <div class="addthis_inline_share_toolbox">

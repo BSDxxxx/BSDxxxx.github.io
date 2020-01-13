@@ -1,0 +1,134 @@
+---
+title: hexo添砖加瓦——博文添加版权信息
+tags:
+  - null
+categories:
+  - 博客管理
+message: '您好, 这里需要密码.'
+comment: true
+copyright: true
+sitemap: true
+top:
+photos:
+password:
+hide:
+---
+<!--more-->
+
+# next内置方案
+
+---
+
+使用next配置文件中的creative_commons参数（旧版本是post_copyright参数）,示例如下：
+
+
+```yml
+creative_commons:
+  license: by-nc-nd
+  sidebar: false
+  post: true
+  language: deed.zh
+```
+内置方案会为每一篇post都添加版权信息，不能针对某一篇进行禁用。要实现的就需要对```themes\next\layout\_macro\post.swig```文件进行修改，在其中找到：
+
+```javascript
+{%- if theme.creative_commons.license and theme.creative_commons.post %}
+  {{ partial('_partials/post/post-copyright.swig') }}
+{%- endif %}
+```
+
+修改成：
+
+```javascript
+{%- if theme.creative_commons.license and theme.creative_commons.post %}
+  {% if page.copyright %}
+    {{ partial('_partials/post/post-copyright.swig') }}
+  {% endif %}
+{%- endif %}
+```
+
+这样就可以通过在每篇文章的中font-matter中添加```copyright: true```实现单独启用
+
+如果对copyright样式不满意，还可以对```themes\next\layout\_partials\post\post-copyright.swig```和```themes\next\source\css\_common\components\post\post-copyright.styl```进行修改
+
+附上我的个人修改：```themes\next\layout\_partials\post\post-copyright.swig```文件
+
+<details>
+<summary>展开查看</summary>
+```javascript
+{%- set ccIcon = '<i class="fa fa-fw fa-creative-commons"></i>' %}
+{%- set ccText = theme.creative_commons.license | upper %}
+
+{% if page.copyright %}
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-title">
+    <strong>本文标题{{ __('symbol.colon') }} </strong>
+    {{- page.title }}
+  </li>
+  <li class="post-copyright-author">
+    <strong>{{ __('post.copyright.author') + __('symbol.colon') }} </strong>
+    <a href="/" title="访问 {{ theme.author }} 的个人博客">{{- page.author or author }}</a>
+  </li>
+  <li class="post-copyright-title">
+    <strong>{{ __('post.posted') + __('symbol.colon') }} </strong>
+    {{ page.date.format("YYYY年MM月DD日 - HH:MM") }}
+  </li>
+  <li class="post-copyright-title">
+    <strong>{{ __('post.edited') + __('symbol.colon') }} </strong>
+    {{ page.updated.format("YYYY年MM月DD日 - HH:MM") }}
+  </li>
+  <li class="post-copyright-link">
+    <strong>{{ __('post.copyright.link') + __('symbol.colon') }}</strong>
+    {{ next_url(page.permalink, page.permalink, {title: page.title}) }}
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="{{ page.permalink }}"  aria-label="复制成功！"></i></span>
+  </li>
+  <li class="post-copyright-license">
+    <strong>{{ __('post.copyright.license_title') + __('symbol.colon') }} </strong>
+    {{- __('post.copyright.license_content', next_url(ccURL, ccIcon + ccText)) }}
+  </li>
+</ul>
+</div>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script> 
+  var clipboard = new ClipboardJS('.fa-clipboard');
+  $(".fa-clipboard").click(function(){
+    clipboard.on('success', function(){
+      swal({   
+        title: "",   
+        text: '复制成功',
+        icon: "success", 
+        showConfirmButton: true
+      });
+    });
+  });
+</script>
+{% endif %}
+```
+</details>
+
+```themes\next\source\css\_common\components\post\post-copyright.styl```文件：
+
+```css
+.post-copyright {
+  background: $whitesmoke;
+  border-left: 3px solid $red;
+  list-style: none;
+  margin: 2em 0 0;
+  padding: .5em 1em;
+}
+
+.post-copyright-link .copy-path:hover {
+  color: #808080;
+  cursor: pointer;
+}
+```
+
+# 其他参考方案
+
+---
+
+1. [为Hexo博客的每一篇文章自动追加版权信息（小于50字不追加）](http://kuangqi.me/tricks/append-a-copyright-info-after-every-post/)
+2. [Hexo Next主题添加版权信息](https://cloud.tencent.com/developer/article/1482137)

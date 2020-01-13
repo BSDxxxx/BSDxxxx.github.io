@@ -52,6 +52,8 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 ### Convenient Command
 
 ``` cmd
+> hexo s --drafts
+
 > hexo g && hexo s --drafts
 
 > hexo clean && hexo g && hexo s --drafts

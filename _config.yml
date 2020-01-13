@@ -187,10 +187,10 @@ baidusitemap:
 backup:
   type: git
   theme: next
-  message: Back up my BSDxxxx.github.io blog更新内容：更换排序插件、更换隐藏插件（仍存在问题）、添加favicon、添加复制代码块功能、上次更新还更换了网站目录结构
+  message: Back up my BSDxxxx.github.io blogcss实现图片放大 | 修改fancybox默认效果 | 根目录建立_data文件夹，next配置文件开启custom_file_path并指向_data | 将自定义样式和脚本放入_data中，同时还原大部分对next内置文件的修改
   repository:
     github: git@github.com:BSDxxxx/BSDxxxx.github.io.git,backup
-    coding: git@github.com:BSDxxxx/BSDxxxx.github.io.git,backup
+    coding: git@e.coding.net:gohome/BSDxxxx.git,backup
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -198,4 +198,4 @@ deploy:
   type: 'git'
   repository: git@github.com:BSDxxxx/BSDxxxx.github.io.git
   branch: master
-  message: Site updated {{ now('YYYY-MM-DD HH:mm:ss') }}更新内容：更换排序插件、更换隐藏插件（仍存在问题）、添加favicon、添加复制代码块功能、上次更新还更换了网站目录结构
+  message: Site updated {{ now('YYYY-MM-DD HH:mm:ss') }}css实现图片放大 | 修改fancybox默认效果 | 根目录建立_data文件夹，next配置文件开启custom_file_path并指向_data | 将自定义样式和脚本放入_data中，同时还原大部分对next内置文件的修改
