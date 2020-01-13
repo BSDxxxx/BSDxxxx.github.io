@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" href="//fonts.geekzu.org/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/fancybox.min.css">
 
 
 <script id="hexo-configurations">
@@ -30,7 +31,7 @@
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
+    fancybox: true,
     mediumzoom: false,
     lazyload: false,
     pangu: false,
@@ -42,7 +43,7 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false},
     path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
@@ -211,6 +212,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -399,14 +401,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
@@ -460,17 +462,18 @@
   &copy; 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
-    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">xzyx</span>
-</div>
-<!--
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.0
-  </div>
--->
+</div><!--鼠标点击效果
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>-->
+<script type="text/javascript" src="/js/anime.min.js"></script> 
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="/js/click-effects.js"></script>
+
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="/js/funny-title.js"></script>
 
         
 <div class="busuanzi-count">
@@ -507,6 +510,8 @@
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="/js/fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -573,7 +578,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     new Valine({
       el: '#valine-comments',
       verify: true,
-      notify: false,
+      notify: true,
       appId: '40y3VGfGAAqDUbVUdlGRIYNU-gzGzoHsz',
       appKey: 'aQ7uC1q7zhJJKNKJY7U3GtoP',
       placeholder: "说说你的看法吧~",
@@ -589,16 +594,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   }, window.Valine);
 });
 </script>
-
-  <!--鼠标点击效果-->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-  <script type="text/javascript" src="/js/click-effects.js"></script>
-  <!--浏览器搞笑标题-->
-  <script type="text/javascript" src="/js/funny-title.js"></script>
-  <!-- 代码块复制功能 -->
-  <script type="text/javascript" src="/js/clipboard.min.js"></script>
-  <script type="text/javascript" src="/js/clipboard-use.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- 代码块复制功能 -->
+<script type="text/javascript" src="/js/clipboard-use.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
