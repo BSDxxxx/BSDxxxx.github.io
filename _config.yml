@@ -168,8 +168,8 @@ marked:
 ## Docs: https://github.com/printempw/hexo-hide-posts/blob/master/README_ZH.md
 hide_posts:
   filter: hide #可以改成其他你喜欢front-matter的名字
-  public_generators: [categories] #指定隐藏文章仍可见的 generator，比如让所有隐藏文章在存档页面可见
-  #常见的 generator 有：index, tags, categories, archives, sitemap, feed, etc.
+  public_generators: [tag] #指定隐藏文章仍可见的 generator，比如让所有隐藏文章在存档页面可见
+  #常见的 generator 有：index, tag, category, archive, sitemap, feed, etc.
   noindex: true #为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录
 
 # https://github.com/hexojs/hexo-generator-sitemap
@@ -187,7 +187,7 @@ baidusitemap:
 backup:
   type: git
   theme: next
-  message: Back up my blog修复hover放大图片 | 与coding 静态托管同步部署,并绑定域名 | 修复点击效果
+  message: Back up my blog移除source/CNAME文件
   repository:
     github: git@github.com:BSDxxxx/BSDxxxx.github.io.git,backup
     coding: git@e.coding.net:gohome/BSDxxxx.git,backup
@@ -199,4 +199,4 @@ deploy:
   repo: 
     github: git@github.com:BSDxxxx/BSDxxxx.github.io.git,master
     coding: git@e.coding.net:gohome/BSDxxxx.git,master
-  message: Site updated {{ now('YYYY-MM-DD HH:mm:ss') }}修复hover放大图片 | 与coding同步部署 | 修复点击效果
+  message: Site updated {{ now('YYYY-MM-DD HH:mm:ss') }}移除source/CNAME文件

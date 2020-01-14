@@ -1,7 +1,7 @@
 ---
 title: Hello World
 tags:
-  - null
+  - hexo
 categories:
   - 博客管理
 message: '您好, 这里需要密码.'
