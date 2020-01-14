@@ -46,3 +46,16 @@ summary {
   opacity: 1;
 }
 
+
+// 图片放大
+// --------------------------------------------------
+.post-body p img
+{
+    z-index: 1000; //设置为最顶层，以免左侧导航栏遮挡
+    position: relative;
+    // cursor: pointer;//鼠标样式：手势
+    transition: all 1.2s; //放大动画的时间：1.2s
+}
+.post-body img:hover {
+    transform: scale(1.4); //放大倍数：1.4倍
+}
