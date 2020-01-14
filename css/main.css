@@ -1163,7 +1163,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7e85ff;
+  background: #ffffcb;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2636,4 +2636,12 @@ summary {
 }
 .highlight:hover .btn-copy {
   opacity: 1;
+}
+.post-body p img {
+  z-index: 1000;
+  position: relative;
+  transition: all 1.2s;
+}
+.post-body img:hover {
+  transform: scale(1.4);
 }

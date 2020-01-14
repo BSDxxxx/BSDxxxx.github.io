@@ -229,13 +229,53 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
+        <span class="collection-header">嗯..! 目前共计 5 篇日志。 继续努力。</span>
       </div>
 
       
     <div class="collection-year">
       <h2 class="collection-header">2020</h2>
     </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-01-14T14:51:32+08:00"
+              content="2020-01-14">
+          01-14
+        </time>
+      </div>
+
+      <h3 class="post-title">
+          <a class="post-title-link" href="/hexo%E6%B7%BB%E7%A0%96%E5%8A%A0%E7%93%A6%E2%80%94%E2%80%94%E5%8D%9A%E6%96%87%E6%B7%BB%E5%8A%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF.html" itemprop="url">
+            <span itemprop="name">hexo添砖加瓦——博文添加版权信息</span>
+          </a>
+      </h3>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-01-14T14:51:08+08:00"
+              content="2020-01-14">
+          01-14
+        </time>
+      </div>
+
+      <h3 class="post-title">
+          <a class="post-title-link" href="/hexo%E6%B7%BB%E7%A0%96%E5%8A%A0%E7%93%A6%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E6%94%BE%E5%A4%A7.html" itemprop="url">
+            <span itemprop="name">hexo添砖加瓦——图片放大</span>
+          </a>
+      </h3>
+
+    </header>
+  </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
@@ -364,63 +404,21 @@
     <img class="site-author-image" itemprop="image" alt="xzyx"
       src="/images/eye2.jpg">
   <p class="site-author-name" itemprop="name">xzyx</p>
-  <div class="site-description" itemprop="description"></div>
-  <!--??????-->
-  <script type="text/javascript">
-    var site_description = function (r) {
-    function t() {
-      return b[Math.floor(Math.random() * b.length)]
-    }
 
-    function e() {
-      return String.fromCharCode(94 * Math.random() + 33)
-    }
+  <!--check in source\_data\sidebar.swig-->
+  <div class="site-description" itemprop="description">一起来修仙</div>
+</div>
 
-    function n(r) {
-      for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
-        var l = document.createElement("span");
-        l.textContent = e(), l.style.color = t(), n.appendChild(l)
-      }
-      return n
-    }
-
-    function i() {
-      var t = o[c.skillI];
-      c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
-    }
-    var l = "",
-      o = ["一起来修仙"].map(function (r) {
-        return r + ""
-      }),
-      a = 2,
-      g = 1,
-      s = 5,
-      d = 75,
-      b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
-      c = {
-        text: "",
-        prefixP: -s,
-        skillI: 0,
-        skillP: 0,
-        direction: "forward",
-        delay: a,
-        step: g
-          };
-        i()
-      };
-     site_description(document.querySelector(".site-description"));
-  </script>
-  <div id="music163player">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=2751189994&auto=1&height=90">
-    </iframe>
-  </div>
+<!--163music-->
+<div id="music163player">
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=2751189994&auto=1&height=90"></iframe>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -461,6 +459,8 @@
         </li>
     </ul>
   </div>
+<!--动态彩色文字-->
+<script type="text/javascript" src="/js/anime-words.js"></script>
 
       </div>
 
@@ -484,15 +484,7 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">xzyx</span>
-</div><!--鼠标点击效果
-<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>-->
-<script type="text/javascript" src="/js/anime.min.js"></script> 
-<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-<script type="text/javascript" src="/js/click-effects.js"></script>
-
-<!--浏览器搞笑标题-->
-<script type="text/javascript" src="/js/funny-title.js"></script>
+</div>
 
         
 <div class="busuanzi-count">
@@ -529,7 +521,7 @@
 
   
   <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="/js/jquery.js"></script>
   <script src="/js/fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -614,6 +606,16 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 });
 </script>
 <!-- 代码块复制功能 -->
-<script type="text/javascript" src="/js/clipboard-use.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script type="text/javascript" src="/js/clipboard-use.js"></script>
+
+<!--鼠标点击效果
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>-->
+<script type="text/javascript" src="/js/anime.min.js"></script> 
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="/js/click-effects.js"></script>
+
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="/js/funny-title.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
