@@ -187,7 +187,7 @@ baidusitemap:
 backup:
   type: git
   theme: next
-  message: Back up my blog由于coding的原因取消404页面
+  message: Back up my blog由于coding审查bug修复，还原404页面
   repository:
     github: git@github.com:BSDxxxx/BSDxxxx.github.io.git,backup
     coding: git@e.coding.net:gohome/BSDxxxx.git,backup
@@ -199,4 +199,5 @@ deploy:
   repo: 
     github: git@github.com:BSDxxxx/BSDxxxx.github.io.git,master
     coding: git@e.coding.net:gohome/BSDxxxx.git,master
-  message: Site updated {{ now('YYYY-MM-DD HH:mm:ss') }}由于coding的原因取消404页面
+    # gitee: git@gitee.com:yaohunzhanyue/BSDxxxx.git,master
+  message: Site updated {{ now('YYYY-MM-DD HH:mm:ss') }}由于coding审查bug修复，还原404页面
