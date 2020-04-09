@@ -189,15 +189,15 @@ backup:
   theme: next
   message: Back up my blog页面底部添加又拍云(_partials/footer.swig)
   repository:
-    # github: git@github.com:BSDxxxx/BSDxxxx.github.io.git,backup
-    coding: git@e.coding.net:gohome/BSDxxxx.git,backup
+    github: git@github.com:BSDxxxx/BSDxxxx.github.io.git,backup
+    # coding: git@e.coding.net:gohome/BSDxxxx.git,backup
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: 
-    # github: git@github.com:BSDxxxx/BSDxxxx.github.io.git,master
-    coding: git@e.coding.net:gohome/BSDxxxx.git,master
+    github: git@github.com:BSDxxxx/BSDxxxx.github.io.git,master
+    # coding: git@e.coding.net:gohome/BSDxxxx.git,master
     # gitee: git@gitee.com:yaohunzhanyue/BSDxxxx.git,master
   message: Site updated {{ now('YYYY-MM-DD HH:mm:ss') }}页面底部添加又拍云(_partials/footer.swig)
