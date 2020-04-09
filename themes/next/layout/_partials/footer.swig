@@ -10,6 +10,8 @@
   </div>
 {%- endif %}
 
+<table frame=void align="left" border="0"><tr>
+<td>
 <div class="copyright">
   {% set copyright_year = date(null, 'YYYY') %}
   &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }} – {% endif %}
@@ -41,6 +43,9 @@
     <span title="{{ __('symbols_count_time.time_total') }}">{{ symbolsTimeTotal(site, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}</span>
   {%- endif %}
 </div>
+</td>
+<td><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="/images/又拍云_logo5.png" width="8%"></a></td>
+</tr></table>
 
 {%- if theme.footer.powered.enable %}
 
